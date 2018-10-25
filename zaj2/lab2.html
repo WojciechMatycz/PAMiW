@@ -1,0 +1,75 @@
+<!doctype html>
+
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/lab2.css" type="text/css"/>
+
+</head>
+
+<body>
+
+	<form id="my-form"
+              method="POST"
+              action="http://edi.iem.pw.edu.pl/chaberb/register/user/"
+              target="_self">
+            <ul>
+
+				<li class="input-row">
+                    <label>Imię:</label>
+                    <input name="firstname" required type="text" />
+                </li>
+
+				<li class="input-row">
+                    <label>Nazwisko:</label>
+                    <input name="lastname" required type="text" />
+                </li>
+
+				<li id="password-li" class="input-row">
+                    <label>Hasło:</label>
+                    <input name="password" required type="password" />
+                </li>
+
+				<li id="repeat-password-li" class="input-row">
+                    <label>Powtórz hasło:</label>
+                    <input name="repeat-password" required type="password"/>
+                </li>
+
+				<li class="input-row">
+                    <label>Data urodzenia:</label>
+                    <input name="birthdate" min="1900-01-01" type="date"/>
+                </li>
+
+				<li id="login-li" class="input-row">
+                    <label>Login:</label>
+                    <input name="login" required type="text"/>
+                </li>
+
+				<li class="input-row">
+                    <label>PESEL:</label>
+                    <input name="pesel" required pattern="[\d]{11}" type="text"/>
+                </li>
+
+				<li class="input-row">
+                    <label>Płeć:</label>
+                    <label>Mężczyzna</label><input name="male" value="M" type="radio"/>
+                    <label>Kobieta</label><input name="female" value="F" type="radio"/>
+                </li>
+
+                <li class="input-row">
+                    <label>Zdjęcie:</label>
+                    <input name="photo" required type="file"/>
+                </li>
+
+                <li class="input-row">
+                    <input id="submit-button" value="Wyślij" type="submit"/>
+                </li>
+            </ul>
+        </form>
+
+	<script src="js/main.js" defer="defer"></script>
+</body>
+</html>

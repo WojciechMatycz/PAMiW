@@ -1,0 +1,22 @@
+body{
+	background-color: #92a8d1;
+	margin: 0;
+	font-size:17px;
+}
+
+section{
+	margin: 3%;
+}
+
+.center {
+    margin: auto;
+	text-align: center;
+}
+
+footer{
+	text-align:center;
+    background: #d3d3d3;
+	padding:20px;
+	font-size:14px;
+	margin: 0;
+}

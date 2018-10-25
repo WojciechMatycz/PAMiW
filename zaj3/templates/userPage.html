@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <div style="display: flex; justify-content: center;">
+        <h4>Witaj {{ username }}! Ilość plików jaką możesz jeszcze dodać: {{number_of_files}} </h4>
+    </div>
+    <div style="display: flex; justify-content: center;">
+       <table>
+          <tr>
+             <th>Twoje pliki</th>
+          </tr>
+          {% for fname in files %}
+          <tr>
+              <td><label>{{ fname }}</label></td>
+             <td>
+                 <form method="POST", action="/matyczw/z3/userPage">
+                    <button id="save-button" name="save-button" value="{{ fname }}" class="btn btn-link">Pobierz</button>
+                 </form>
+             </td>
+             <td>
+                <form action="/matyczw/z3/delete" method="POST">
+                   <button id="delete-button" name="delete-button" value="{{ fname }}" class="btn btn-danger">Usuń</button>
+                </form>
+             </td>
+          </tr>
+          {% endfor %}
+       </table>
+    </div>
+        <div>
+            <form action="/matyczw/z3/upload" method="POST" enctype=multipart/form-data>
+                <div class="form-group">
+                  <h5>Dodaj plik</h5>
+                  <div class="col-md-4">
+                    <input id="add-file" name="file" type="file" class="form-control input-md">
+                  </div>
+                    <div class="col-md-4">
+                        <input name="submit-button" value="Wyślij" type="submit" class="btn btn-primary">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <form action="/matyczw/z3/logout" method="POST">
+            <div class="form-group">
+              <div class="col-md-4">
+                <input id="logout-button" name="logout-button" value="Wyloguj" type="submit" class="btn btn-danger"/>
+              </div>
+            </div>
+        </form>
+
+        <div class="messageDiv">
+            <div class="messageElement"><h4>{{ message }}</h4></div>
+        </div>
+
+</body>
+</html>

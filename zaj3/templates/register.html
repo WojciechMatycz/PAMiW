@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+
+    <h4>{{ error }}</h4>
+
+    <div style="display: flex; justify-content: center;">
+        <h1>Rejestracja</h1>
+    </div>
+    <form action="/matyczw/z3/handle_register" method="POST" class="form-horizontal">
+        <fieldset>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="login">Podaj Login</label>
+          <div class="col-md-4">
+          <input id="login" name="login" type="text" placeholder="login" class="form-control input-md" required="">
+
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="password">Podaj hasło</label>
+          <div class="col-md-4">
+            <input id="password" name="password" type="password" placeholder="hasło" class="form-control input-md" required="">
+
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="register-button">Rejestracja</label>
+          <div class="col-md-4">
+            <input id="register-button" name="submit-button" value="Zarejestruj" type="submit" class="btn btn-primary"/>
+          </div>
+        </div>
+
+        </fieldset>
+        </form>
+        <form action="/matyczw/z3/login">
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="return-button">Wróć do logowania</label>
+                    <div class="col-md-4">
+                        <input id="return-button" type="submit" value="Powrót" class="btn btn-primary" \/>
+                    </div>
+            </div>
+        </form>
+</body>
+</html>

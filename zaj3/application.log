@@ -1,0 +1,66 @@
+*** Starting uWSGI 2.0.15-debian (64bit) on [Thu Oct 18 12:53:20 2018] ***
+compiled with version: 7.3.0 on 28 September 2018 15:41:15
+os: Linux-4.15.0-36-generic #39-Ubuntu SMP Mon Sep 24 16:19:09 UTC 2018
+nodename: pi
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/matyczw/lab3
+writing pidfile to /home/matyczw/lab3/z3.pid
+detected binary path: /usr/bin/uwsgi-core
+dropping root privileges as early as possible
+chdir() to /home/matyczw/lab3
+your processes number limit is 100
+your memory page size is 4096 bytes
+detected max file descriptor number: 300
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/matyczw,z3.sock fd 5
+dropping root privileges after socket binding
+Python version: 2.7.15rc1 (default, Apr 15 2018, 21:51:34)  [GCC 7.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5630de1bda30
+dropping root privileges after plugin initialization
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145536 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5630de1bda30 pid: 24464 (default app)
+dropping root privileges after application loading
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 24464)
+spawned uWSGI worker 1 (pid: 24469, cores: 1)
+*** Starting uWSGI 2.0.15-debian (64bit) on [Thu Oct 18 12:53:31 2018] ***
+compiled with version: 7.3.0 on 28 September 2018 15:41:15
+os: Linux-4.15.0-36-generic #39-Ubuntu SMP Mon Sep 24 16:19:09 UTC 2018
+nodename: pi
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/matyczw/lab3
+writing pidfile to /home/matyczw/lab3/z3.pid
+detected binary path: /usr/bin/uwsgi-core
+dropping root privileges as early as possible
+chdir() to /home/matyczw/lab3
+your processes number limit is 100
+your memory page size is 4096 bytes
+detected max file descriptor number: 300
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/matyczw,z3.sock fd 5
+dropping root privileges after socket binding
+Python version: 2.7.15rc1 (default, Apr 15 2018, 21:51:34)  [GCC 7.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5636a3b6c980
+dropping root privileges after plugin initialization
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145536 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5636a3b6c980 pid: 24519 (default app)
+dropping root privileges after application loading
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 24519)
+spawned uWSGI worker 1 (pid: 24525, cores: 1)
