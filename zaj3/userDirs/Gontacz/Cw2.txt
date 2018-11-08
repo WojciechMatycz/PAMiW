@@ -1,9 +1,0 @@
-Napisz program szyfruj¹cy algorytmem przesuniêcia cyklicznego o wybran¹ liczbê.
-Napisz program deszyfruj¹cy algorytmem przesuniêcia cyklicznego.
-wykorzystuj¹c przesuniêcie w ty³,
-wykorzystuj¹c przesuniêcie w przód o dope³nienie do pe³nego okresu.
-Wielokrotnie wywo³uj¹c algorytmu przesuniêcia cyklicznego w pêtli mo¿na uzyskaæ efekt odszyfrowania. Na przyk³ad dla rot13, wystarczy tylko dwa razy. Dla podanej liczby okreœl teoretycznie iloœæ wymaganych powtórzeñ, a nastêpnie sprawdŸ to praktycznie.
-Za pomoc¹ analizy statystycznej postaraj siê odszyfrowaæ tekst zaszyfrowany algorytmem przesuniêcia cyklicznego o nieznanym kluczu.
-Porównaj rozk³ady statystyczne tekstów w trzech ró¿nych jêzykach.
-Napisz program szyfruj¹cy algorytmem Vigenere.
-Napisz program szyfruj¹cy algorytmem Beauforta.

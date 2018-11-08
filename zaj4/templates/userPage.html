@@ -24,6 +24,8 @@
              </td>
              <td>
                 <form action="/matyczw/z3/delete" method="POST">
+                    <input type="hidden" name="token" value="{{token}}">
+                    <input type="hidden" name="username" value="{{username}}">
                    <button id="delete-button" name="delete-button" value="{{ fname }}" class="btn btn-danger">Usuń</button>
                 </form>
              </td>
@@ -36,7 +38,9 @@
                 <div class="form-group">
                   <h5>Dodaj plik</h5>
                   <div class="col-md-4">
+                    <input type="hidden" name="username" value="{{username}}">
                     <input id="add-file" name="file" type="file" class="form-control input-md">
+                      <input type="hidden" name="token" value="{{token}}">
                   </div>
                     <div class="col-md-4">
                         <input name="submit-button" value="Wyślij" type="submit" class="btn btn-primary">
